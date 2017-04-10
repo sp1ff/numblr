@@ -92,7 +92,7 @@ digits, upper- and lower-case letters. One hundred twenty-seven
 represented '~'.
 
 #+ATTR_HTML: :height 350
-https://upload.wikimedia.org/wikipedia/commons/8/82/US-ASCII_code_chart.png
+[[file:img/US-ASCII_code_chart.png][ASCII Code Chart]]
 [[[ref_25][25]]]
 
 The upshot is that you only needed 7 bits to represent all the
@@ -322,7 +322,7 @@ are reserved entirely for private use. [[[ref_10][10]]]
 Here's a visual representation of the planes:
 
 #+ATTR_HTML: :height 350
-[[https://www.w3.org/International/articles/definitions-characters/index-data/unicodeplanes.png]]
+[[file:img/unicodeplanes.png][Code Planes]]
 
 Today, the Unicode code space encodes 135 different scripts and 1100
 languages. There are still over 100 unsupported scripts, both modern
