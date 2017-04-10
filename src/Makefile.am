@@ -1,0 +1,23 @@
+bin_PROGRAMS = 1 2 3 4 5 6
+
+AM_CPPFLAGS = -I$(srcdir)/..
+AM_CXXFLAGS = -std=c++11 $(BOOST_CPPFLAGS)
+AM_LDFLAGS  = -static $(BOOST_LDFLAGS)
+
+1_SOURCES = 1.cc
+1_CXXFLAGS = -finput-charset=WINDOWS-1252 $(AM_CXXFLAGS)
+
+2_SOURCES = 1.cc
+2_CXXFLAGS = -finput-charset=WINDOWS-1252 -fexec-charset=WINDOWS-1252 $(AM_CXXFLAGS)
+
+3_SOURCES = 3.cc
+3_CXXFLAGS = -finput-charset=WINDOWS-1252 $(AM_CXXFLAGS)
+
+4_SOURCES = 4.cc
+4_LDADD = $(BOOST_LOCALE_LIB) $(BOOST_SYSTEM_LIB) -lpthread
+
+5_SOURCES = 5.cc
+5_CXXFLAGS = -finput-charset=WINDOWS-1252 -fexec-charset=WINDOWS-1252 $(AM_CXXFLAGS)
+
+6_SOURCES = 6.cc
+6_CXXFLAGS = -finput-charset=WINDOWS-1252 -fexec-charset=WINDOWS-1252 $(AM_CXXFLAGS)
