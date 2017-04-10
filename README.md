@@ -18,13 +18,11 @@ A character encoding is a mapping from the non-negative integers to characters f
 
 Zero was used to represent a NUL, or NOP, one through thirty-one were used for assorted codes used in the control of the electro-mechanical devices in use at the time, thirty-two was space, thirty-tree through forty-seven were used for assorted punctuation characters, then the digits, upper- and lower-case letters. One hundred twenty-seven represented '~'.
 
-[ASCII Code Chart](img/US-ASCII_code_chart.png) [[25](#orgae36f2c)]
+![img](img/US-ASCII_code_chart.png) [[25](#orgae36f2c)]
 
 The upshot is that you only needed 7 bits to represent all the characters you needed in the English language as used in the United States. Since ASCII stands for the **American** Standard Code for Information Interchange, I would argue that the standard did its job admirably; the world just needed a bigger standard.
 
 To that point, there were of course many people in the world who wanted to represent **other** characters. And by that time, all popular architectures used eight-bit bytes, leaving 128 more numeric values that could be represented with a byte, which people immediately set about doing. Unfortunately, there are a lot more than 128 characters non-American English speakers wanted to represent, which led to a lot incompatible ways of mapping characters in various alphabets to bytes. For instance, there's the ISO/IEC 8859 [[8](#orgc960941)] series of eight-bit character mappings. Western readers will recognize "ISO-8859-1", that's the mapping that contains the Latin alphabet),
-
-![img](//ascii-table.com/img/cp819.gif)
 
 but the standard covered many other languages, as well:
 
@@ -132,7 +130,7 @@ I want to start by saying that Nathan Reed's [A Programmer's Introduction to Uni
     
     Here's a visual representation of the planes:
     
-    [Code Planes](img/unicodeplanes.png)
+![img](img/unicodeplanes.png)
     
     Today, the Unicode code space encodes 135 different scripts and 1100 languages. There are still over 100 unsupported scripts, both modern and historical, which people are still [working](http://linguistics.berkeley.edu/sei/) to add. [[10](#org31dc7ba)]
 
